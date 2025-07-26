@@ -1,0 +1,35 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Doing namaste react course by Akshay Saini",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prithvijitbasak/namaste-react.git"
+  },
+  "keywords": [
+    "react",
+    "web",
+    "development"
+  ],
+  "author": "Prithvijit Basak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prithvijitbasak/namaste-react/issues"
+  },
+  "homepage": "https://github.com/prithvijitbasak/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserslist": [
+    "last 2 Chrome version"
+  ]
+}
