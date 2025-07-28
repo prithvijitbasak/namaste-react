@@ -1,20 +1,23 @@
 import React from "react";
-import ReactDOM from "react-dom/client"
+import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div", { id: "parent-div" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", { id: "h1-inside-child" }, "Inside child of react"),
-    React.createElement("h2", { id: "heading2" }, "H2 tag"),
-  ]),
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", { id: "h1-inside-child" }, "Inside child"),
-    React.createElement("h2", { id: "heading2" }, "H2 tag"),
-  ]),
-]);
+const Heading = () => (
+  <div>
+    <h1>Heading from child</h1>
+  </div>
+);
 
-console.log(parent);
+const value = 100;
+
+const Heading2 = () => {
+  return (
+    <div className="parent">
+      <h1>hi from parent</h1>
+      {value}
+      <Heading />
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log("Here is the root:", root);
-
-root.render(parent);
+root.render(<Heading2 />);
